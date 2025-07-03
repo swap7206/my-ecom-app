@@ -5,6 +5,6 @@ interface ProductDetailPageProps {
 }
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
-  const {id} = await params;
+  const { id } = params;
   return <ProductDetailsTemplate productId={Number(id)} />;
 }
