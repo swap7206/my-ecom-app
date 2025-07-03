@@ -1,10 +1,7 @@
+import { use } from "react";
 import ProductDetailsTemplate from '@/components/templates/ProductDetailsTemplate';
 
-interface ProductDetailPageProps {
-  params: { id: string };
-}
-
-export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
-  const { id } = params;
+export default function ProductDetailPage({params}: {params: Promise<{ id: string }>}) {
+  const { id } = use(params);
   return <ProductDetailsTemplate productId={Number(id)} />;
 }
