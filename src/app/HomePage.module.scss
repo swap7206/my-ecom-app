@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-unit);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+}
+
+.link {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+
+  &:hover {
+    color: 0.85;
+  }
+}

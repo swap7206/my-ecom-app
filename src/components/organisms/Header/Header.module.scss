@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
+}
+
+.logo a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
