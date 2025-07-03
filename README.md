@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ My E-Commerce App
 
-## Getting Started
+A performant and scalable e-commerce frontend application built using **Next.js**, **TypeScript**, and **SCSS**, following the **Atomic Design** pattern. This project demonstrates best practices in state management, routing, API integration, performance optimization, and component-driven development.
 
-First, run the development server:
+### 🌐 [Live Demo](https://storeapp-nextjs.netlify.app/)
+
+---
+
+## 📌 Problem Statement
+
+Design and develop a modern e-commerce web application that allows users to:
+
+- Browse a list of products
+- View detailed information for each product
+- Navigate between product listings and individual product detail pages
+- Maintain smooth routing and state transitions
+- Avoid unnecessary re-fetching of product data when revisiting the same product detail page
+
+The application must be built using the latest best practices including:
+
+- **Next.js** for server-side rendering and routing
+- **TypeScript** for static type checking
+- **SCSS** for modular and maintainable styling
+- **Atomic Design** for UI component organization
+- **React Context + useReducer** for global state management
+- **Unit testing** to ensure code quality and stability
+
+API Source: [FakeStore API](https://fakestoreapi.com/docs#tag/Products/operation/addProduct)
+
+---
+
+## 🔧 Tech Stack
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **SCSS (Modules)**
+- **React Context API + useReducer**
+- **Jest + React Testing Library**
+- **Atomic Design Architecture**
+- **FakeStore API**
+
+---
+
+## 🚀 Features
+
+- 🔄 Dynamic Routing with Next.js
+- 🧱 Atomic Design component structure
+- 🛒 Product Listing Page
+- 📄 Product Detail Page
+- 🧠 Global state management with Context + useReducer
+- 🚫 Avoid redundant API calls on same PDP visits
+- ✅ Unit tested components
+- 💅 Responsive, styled using SCSS modules
+
+---
+
+## 📁 Project Structure
+```
+my-ecom-app/src
+├── __mocks__
+├── app/ # Next.js app router (product listing, product details)
+├── components/ # Atomic Design components (atoms, molecules, organisms, templates)
+├── context/ # Global state context and reducer
+├── services
+├── styles/ # SCSS modules
+└── types/ # TypeScript types
+```
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js (v16 or higher)](https://nodejs.org/)
+- npm or yarn
+
+### 🔄 Clone the Repository
 
 ```bash
+git clone https://github.com/swap7206/my-ecom-app.git
+cd my-ecom-app
+📦 Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+🏗️ Run Locally
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
+App will be available at: http://localhost:3000
+
+🛠️ Build for Production
+bash
+Copy
+Edit
+npm run build
+npm start
 # or
-pnpm dev
+yarn build
+yarn start
+🧪 Run Test Cases
+bash
+Copy
+Edit
+npm run test
 # or
-bun dev
-```
+yarn test
+📦 API Reference
+Using FakeStore API:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+GET /products - Get list of products
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+GET /products/:id - Get a specific product by ID
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📸 Screenshots
+(Add screenshots here if needed)
 
-## Learn More
+🧑‍💻 Author
+Swapnil
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🪪 License
+This project is licensed under the MIT License - see the LICENSE file for details.
