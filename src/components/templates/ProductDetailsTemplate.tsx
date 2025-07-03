@@ -29,7 +29,7 @@ const ProductDetailsTemplate = ({ productId }: Props) => {
       try {
         const product = await getProductById(productId);
         dispatch({ type: 'SET_PRODUCT_CACHE', payload: product });
-      } catch (err) {
+      } catch {
         setError('Failed to load product.');
       } finally {
         setLoading(false);
