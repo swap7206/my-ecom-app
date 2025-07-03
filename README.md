@@ -82,34 +82,22 @@ Make sure you have the following installed:
 git clone https://github.com/swap7206/my-ecom-app.git
 cd my-ecom-app
 📦 Install Dependencies
-bash
-Copy
-Edit
 npm install
 # or
 yarn install
 🏗️ Run Locally
-bash
-Copy
-Edit
 npm run dev
 # or
 yarn dev
 App will be available at: http://localhost:3000
 
 🛠️ Build for Production
-bash
-Copy
-Edit
 npm run build
 npm start
 # or
 yarn build
 yarn start
 🧪 Run Test Cases
-bash
-Copy
-Edit
 npm run test
 # or
 yarn test
